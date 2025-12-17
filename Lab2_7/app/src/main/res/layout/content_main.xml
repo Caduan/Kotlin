@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+												   xmlns:app="http://schemas.android.com/apk/res-auto"
+												   xmlns:tools="http://schemas.android.com/tools"
+												   android:layout_width="match_parent"
+												   android:layout_height="match_parent"
+												   tools:context=".MainActivity">
+
+	<com.google.android.material.chip.Chip
+			android:id="@+id/chip_material"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:checkable="true"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="1.0"
+			app:layout_constraintVertical_bias="0.042"/>
+	<com.google.android.material.checkbox.MaterialCheckBox
+			android:id="@+id/check_box_material"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="CheckBox"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@id/chip_material"
+			android:layout_marginTop="16dp" />
+
+	<com.google.android.material.switchmaterial.SwitchMaterial
+			android:id="@+id/switch_material"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Switch"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@id/check_box_material"
+			android:layout_marginTop="16dp" />
+
+	<androidx.appcompat.widget.AppCompatToggleButton
+			android:id="@+id/toggle_button"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="ToggleButton"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@id/switch_material"
+			android:layout_marginTop="16dp" />
+
+	<com.google.android.material.button.MaterialButton
+			android:id="@+id/show_action"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Show States"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@id/toggle_button"
+			android:layout_marginTop="32dp" />
+
+	<com.google.android.material.textview.MaterialTextView
+			android:id="@+id/summary_text"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_margin="16dp"
+			android:text=""
+			android:textSize="14sp"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintTop_toBottomOf="@id/show_action"
+			app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
