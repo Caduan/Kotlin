@@ -1,0 +1,7 @@
+<resources>
+	<string name="app_name">Todo App</string>
+	<string name="enter_task">Enter new task</string>
+	<string name="total_tasks_0">Total tasks: 0</string>
+	<string name="new_task">New Task</string>
+	<string name="notebook">Notebook</string>
+</resources>

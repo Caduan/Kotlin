@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="Theme.Lab3_3_3_4_Gena_and_Phones" parent="android:Theme.Material.Light.NoActionBar"/>
+</resources>
